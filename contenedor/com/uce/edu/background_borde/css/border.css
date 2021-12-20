@@ -1,0 +1,32 @@
+h1 {
+    border-style: dotted;
+}
+
+h2 {
+    border-style: dashed;
+}
+
+
+#identificacion_h1 {
+    border-style: double;
+}
+
+#identificacion_h2 {
+    border-style: groove;
+}
+
+.titulo {
+    border-style: outset;
+}
+
+.subtitulo {
+    border-style: inset;
+}
+
+h1[translate] {
+    border-style: none;
+}
+
+h2[translate] {
+    border-style: solid;
+}

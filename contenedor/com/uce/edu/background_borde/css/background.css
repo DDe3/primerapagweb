@@ -1,0 +1,39 @@
+h1 {
+    background-color: yellow;
+    opacity: 0.5;
+}
+
+h2 {
+    background-color: yellow;
+    opacity: 1;
+}
+
+#identificacion_h1 {
+    background-color: green;
+    opacity: 0.5;
+}
+
+#identificacion_h2 {
+    background-color: greenyellow;
+    opacity: 1;
+}
+
+.titulo {
+    background-color: red;
+    opacity: 0.3;
+}
+
+.subtitulo {
+    background-color: salmon;
+    opacity: 0.8;
+}
+
+h1[translate] {
+    background-color: thistle;
+    opacity: 0.3;
+}
+
+h2[translate] {
+    background-color: skyblue;
+    opacity: 1;
+}
