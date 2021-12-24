@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script></script>
+
+</head>
+
+<body>
+
+    <p id="elemento_uno"></p>
+
+    <p id="elemento_dos"></p>
+
+    <script>
+        
+        var elementos = "<p>Primero</p><p>Segundo</p><p>Tercero</p>";
+        document.getElementById("elemento_uno").innerHTML = elementos;
+
+
+        var arreglo = ["First", "Second", "Third"];
+        var html = '';
+        arreglo.forEach(x => html+='<p>'+x+'</p>');
+        document.getElementById("elemento_dos").innerHTML = html;
+
+    </script>
+
+</body>
+
+</html>
