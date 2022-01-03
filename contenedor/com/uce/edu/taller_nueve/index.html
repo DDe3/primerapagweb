@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        
+        function cambiarEstado() {
+            let estado = document.getElementById('img1').src;
+            if (estado == 'images/respekte2.png') {
+                estado = 'images/respekte.png';
+            } else {
+                estado = 'images/respekte2.png';
+            }
+            document.getElementById('img1').src = estado;
+        }
+
+    </script>
+    <script src="js/funciones.js"></script>
+    
+</head>
+
+<body>
+
+    <p id="demo">Mi primera pagina</p>
+    
+    <img id="img1" src="images/respekte.png"></img>
+
+    <script>
+        document.getElementById('img1').style.color = 'yellow';
+    </script>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML='Modificaste este texto'">Presioname</button>
+    <button type="button" onclick="cambiarEstado()">Girar</button>
+    <button type="button" onclick='document.getElementById("demo").style.backgroundColor="blue"'>Azul</button>
+    <button type="button" onclick='document.getElementById("demo").style.backgroundColor="yellow"'>Amarillo</button>
+    <button type="button" onclick='document.getElementById("img1").style.display="none"'>Ocultar</button>
+    <button type="button" onclick='document.getElementById("img1").style.display="block"'>Aparecer</button>
+    <button type="button" onclick="imprimirLog()">Imprimir</button>
+    <button type="button" onclick="cambiarEstado2()">Ocultar</button>
+    <button type="button" onclick="tiposAtributos()">var-cons-let</button>
+
+
+
+</body>
+
+</html>
