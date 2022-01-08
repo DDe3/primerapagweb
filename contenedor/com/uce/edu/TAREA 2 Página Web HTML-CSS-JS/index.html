@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prueba 1</title>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <center>
+    <h3 id="textoInicial">Seleccione el Pokémon correcto</h1>
+    <img id="img1"></img>
+    
+    <br>
+
+    <button id="boton0" type="button" onclick="iniciar()">Jugar</button>
+    <button id="boton1" type="button" onclick="adivinar(document.getElementById('boton1').innerHTML)" style="display: none;"></button>
+    <button id="boton2" type="button" onclick="adivinar(document.getElementById('boton2').innerHTML)" style="display: none;"></button>
+    <button id="boton3" type="button" onclick="adivinar(document.getElementById('boton3').innerHTML)" style="display: none;"></button>
+    <button id="boton4" type="button" onclick="adivinar(document.getElementById('boton4').innerHTML)" style="display: none;"></button>
+    <button id="boton5" type="button" onclick="reiniciar()" style="display: none;">Reiniciar</button>
+    </center>
+
+    <h3 id="respuesta", style="display: none;"></h1>
+
+    
+</body>
+</html>
