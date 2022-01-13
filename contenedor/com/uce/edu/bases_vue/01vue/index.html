@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    
+    
+</head>
+<body>
+
+    <h1>Antes de Vue</h1>
+    <hr>
+    <div id="myApp">
+        <h1>Hola mundo</h1>
+        <p>Este es mi primer proyecto con vue</p>
+        {{mensaje}}
+        <br>
+        {{mensaje2}}
+        <br>
+        {{mensaje3}}
+
+        <br>
+        <button v-on:click="cambiarMensaje">Cambiar</button>
+        <br>
+        <button v-on:click="cambiarTextoMayuscula">Cambiar Mayuscula</button>
+    </div>
+    <hr>
+    <h1>Despues de Vue</h1>
+
+    {{mensaje}}
+        <br>
+    {{mensaje2}}
+    
+    <script src="app.js"></script>
+
+</body>
+</html>
