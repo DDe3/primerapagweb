@@ -12,29 +12,39 @@
     <div id="myApp">
 
         <h1>Personas</h1>
+
+        <input type="text" v-model="nuevoNombre">
+        <input type="text" v-model="nuevaEdad" v-on:keypress.enter="metodoTeclado">
+        <h1>Escribiendo...</h1>
+        <h2>{{nuevoNombre}}</h2>
+
+
+        <!-- 
         <ul>
             <li>{{miArreglo[0]}}</li>
             <li>{{miArreglo[1]}}</li>
             <li>{{miArreglo[2]}}</li>
-        </ul>
+        </ul>-->
         
 
         <!-- La directiva v-for de vue-->
 
-        <ul>
+        <!--<ul>
             <li v-for="x in miArreglo">
                 <span>{{x.nombre}}</span>
                 <blockquote>Edad: {{x.edad}}</blockquote>
             </li>
-        </ul>
+        </ul>-->
 
         <!-- Directiva v-for con desestructuración -->
         <ul>
             <li v-for="{nombre, edad} in miArreglo">
                 <span>{{nombre}}</span>
-                <blockquote>Edad: {{edad}}</blockquote>
+                <blockquote v-if="edad != undefined">Edad: {{edad}}</blockquote>
+                <!--<blockquote v-show="edad!=undefined">Edad: {{edad}}</blockquote>-->
             </li>
         </ul>
+    
 
         
 
