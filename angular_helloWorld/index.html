@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- La palabra clave "ng-app" se usa para indicar que esta aplicación debe considerarse como una aplicación js angular. -->
+<html ng-app="app"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular Hello World</title>
+    
+</head>
+<body>
+    <h1 ng-controller="controladorHolaMundo">{{mensaje}}</h1>
+
+    <!-- El controlador es lo que se utiliza poner la logica. 
+        En la etiqueta h1, queremos acceder al controlador, 
+        que tendrá la lógica para mostrar "Hola mundo con Angular", 
+        por lo que podemos decir que en esta etiqueta 
+        queremos acceder al controlador llamado "controladorHolaMundo".-->
+
+    <!--
+        Estamos usando una variable llamada "mensaje" 
+        que no es más que un marcador de posición para 
+        mostrar el mensaje "Hola mundo con Angular" -->
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
